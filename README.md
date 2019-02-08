@@ -5,7 +5,7 @@ if you see bugs pls let me know.
 
 
 itorator
-`
+```
 require 'iterator'
 
 def attack(number)
@@ -13,4 +13,4 @@ def attack(number)
 end
 
 Iterator.new.begin(0, 100, 5, "attack")
-`
+```
