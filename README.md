@@ -32,6 +32,7 @@ Iterator.new.begin(0, 100, 5, "attack")
 
 #### Example 2
 In this example we can read a file line by line, but by specifying the line at each read, we can use a multi-threaded approach.
+Im passing the total number of lines in the file as the second parameter. This  gives the iterator class what it needs to iterate over the file line by line passing those line numbers to the threads in correct sequence. As those line numbers come back to the "example2" method, I change the return value to an integer and use it to take that line number out of the file.
 ```
 require 'rio'
 require 'iterator'
@@ -50,7 +51,8 @@ Iterator.new.begin(0, line_total, 5, "example2")
 ```
 #### Example 3
 This very basic example is where it all comes together, in the way I utilize the gem as intended.
-I iterate over a file and use it to brute force basic authentication on a website.
+I iterate over a file and use it to brute force basic authentication on a website. building on example 2, 
+I take the returned line number, get that line from my file and use it as a password in the http request.
 
 
 ```
