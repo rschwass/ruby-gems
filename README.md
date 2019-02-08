@@ -49,7 +49,7 @@ end
 Iterator.new.begin(0, line_total, 5, "example2")
 ```
 #### Example 3
-This very basic is example is where it all comes together, in the way I utilize the gem as intended.
+This very basic example is where it all comes together, in the way I utilize the gem as intended.
 I iterate over a file and use it to brute force basic authentication on a website.
 
 
